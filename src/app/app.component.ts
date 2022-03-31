@@ -6,37 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-angular-cv';
+  
  
   name: string ="Andrew Hord"
   email: string ="drewhord@gmail.com"
   location: string="Batavia, OH 45103"
 
- technologies: string[]= [ "Git",  "SQL",  "C#",  
- "Spring", "Css", "Scrum",  
- "HTML", "JAVA", "JSON",  
- "Eclipse", "Visual Studio 2019", "Bootstrap"
+ technologies = [ 
+   {a:"Git",  b:"SQL",  c:"C#"},
+   {a:"Spring", b:"Css", c:"Scrum"} ,
+   {a:"HTML", b:"JAVA", c:"JSON"},  
+   {a:"Eclipse", b:"Visual Studio 2019", c:"Bootstrap"}
  ];
 
- workHistory = [ 
-   {
-   
-   name: "Unted States Postal Service",
-   year: "2016-2022",
-   jobtitle: "Full Time Regular Clerk",
-   role1: "customer service",
-   role2: "weekly supply database"   
-  
-},
-{
-  
-  name: "Total Quality Logistics",
-  year: "2013-2015",
-  jobtitle: "Logistics Account Executive ",
-  role1: "daily lead generation",
-  role2:  "resolved shipping issues"
-}
-]
+
 
 education = [
   {

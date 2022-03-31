@@ -10,27 +10,20 @@
   <h1>{{name}}</h1>
   <h5>{{email}} | {{location}}</h5>
 
-  <h1>Tehcnology</h1>
-  <div>{{technologies}}</div>
+  <h3>Technology</h3>
+  <table>
+    <tr *ngFor="let tr of technologies">
+      <td>{{ tr.a }}</td>
+      <td>{{ tr.b }}</td>
+      <td>{{ tr.c }}</td>   
 
-  <h3>Work History</h3>
-  <div *ngFor="let wh of workHistory">
-    <span class=> {{ wh.name }}</span>
-    <span> {{ wh.year }}</span>
-    <p> {{ wh.jobtitle }}</p>
-    <p> {{ wh.role1 }}</p>
-    <p> {{ wh.role2 }}</p>
+    </tr>
+    </table>
 
-  </div>
+
+  <app-workexperience></app-workexperience>
   
-  <h3>Education</h3>
-  <div *ngFor="let e of education">
-    <span> {{e.school}}</span>
-    <span> {{e.years}}</span>
-    <p> {{e.bdegree}}</p>
-    <p> {{e.adegree}}</p>
-  
-  </div>
+  <app-education></app-education>
   
   
 </body>
